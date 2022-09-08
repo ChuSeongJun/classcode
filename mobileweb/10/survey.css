@@ -1,0 +1,42 @@
+body {
+    margin : 0;
+    padding : 0;
+    height: 100vh;
+}
+
+h1{
+    color: red;
+    text-align: center;
+}
+
+header {
+    width:100vh;
+    height: 15vh;
+}
+
+header div{
+    margin-bottom: 20px;
+    padding:10px 10px;
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+
+form {
+    background-color: pink;
+    width:100vh;
+    height: 60vh;
+    margin:10px 10px;
+}
+
+footer {
+    background-color: orange;
+    width:100vh;
+    height: 5vh;
+    border-radius: 20px;
+}
+footer div{
+    padding: 10px 10px;
+    display: flex;
+    align-content: center;
+}
