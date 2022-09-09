@@ -1,0 +1,23 @@
+.navbar{
+    display: flex;
+    justify-content: flex-end;
+    padding: 1rem 1rem;
+    margin-right: 1.5rem;
+}
+
+
+.navbar span:nth-child(n+2) {
+    position: relative;
+    margin-left: 5px;
+    padding-left: 10px;
+}
+
+.navbar span:nth-child(n+2)::after {
+    position:absolute;
+    left: 0;
+    top: 3px;
+    content: "";
+    width: 1px;
+    height: 18px;
+    background-color: black;
+}
