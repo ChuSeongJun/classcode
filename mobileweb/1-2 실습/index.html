@@ -2,47 +2,53 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <script src="https://kit.fontawesome.com/e4e79036b7.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/e4e79036b7.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="CSS/styles.css" />
     <title>모바일웹 실습</title>
   </head>
   <body>
-    <div class="navbar">
+    <div class="Navbar">
       <span>HOME</span>
       <span>Login</span>
       <span>JOIN</span>
       <span>NOTICE</span>
     </div>
-    <div class="main">
-      <div class="leftside">
+    <div class="LeftSide">
+      <div class="logo">
+        <img src="img/img3.jpg" alt="" />
+        <span>추성준</span>
+      </div>
+      <div class="LeftSideLogin">
         <div>
-          <img src="img/img3.jpg" alt="" />
-          <div>추성준</div>
+          <div>Member</div>
+          <div>Login</div>
         </div>
-        <div class="leftsideLogin">
-          <div>
-            <div>Member</div>
-            <div>Login</div>
-          </div>
-          <div>
+        <div>
+          <span>
             <input type="text" />
             <input type="password" />
-            <div>로그인</div>
-          </div>
-          <div>
-            <span>회원가입</span>
-            <span>아이디/비밀번호 찾기</span>
-          </div>
-        </div>
-        <div class="leftsidCommunity">
-          <div>
-            <div>COMMUNITY 커뮤니티</div>
-            <div>
-              <img src="img/img1.jpg" alt="" />
-            </div>
-          </div>
+          </span>
+          <span>로그인</span>
         </div>
         <div>
+          <span>회원가입</span>
+          <span></span>
+          <span>아이디/비밀번호 찾기</span>
+        </div>
+      </div>
+      <div class="LeftSidCommunity">
+        <div>
+          <div>
+            <div>COMMUNITY</div>
+            <div>커뮤니티</div>
+          </div>
+          <img src="img/img1.jpg" alt="" />
+        </div>
+        <div class="middleline"></div>
+        <div class="LeftSidCommunitybottom">
           <span><i class="fa-solid fa-plus"></i>자유 게시판</span>
           <span><i class="fa-solid fa-plus"></i>방명록</span>
           <span><i class="fa-solid fa-plus"></i>공지사항</span>
@@ -50,10 +56,76 @@
           <span><i class="fa-solid fa-plus"></i>포토갤러리</span>
         </div>
       </div>
-      <div class="rightside">
-        <div></div>
-        <div></div>
-        <div></div>
+    </div>
+    <div class="RightSide">
+      <div class="RightSideNavbar">
+        <span>자유 게시판</span>
+        <span>기타 연주</span>
+        <span>공동 구매</span>
+        <span>연주회 안내</span>
+        <span>회원 게시판</span>
+      </div>
+      <div class="RightSideCommunity">
+        <img src="img/img2.jpg" alt="" />
+      </div>
+      <div class="RightSideQuestion">
+        <div class="RigthSideQuestionHeader">자유 게시판</div>
+        <div class="RightSideQuestionSub">
+          <span>
+            <i class="fa-solid fa-caret-right"></i>총 5개의 게시물이 있습니다.
+          </span>
+          <span>
+            <div>SELECT</div>
+            <select>
+              <option>제목</option>
+              <option>글쓴이</option>
+              <option>제목+글쓴이</option>
+            </select>
+            <input type="password" />
+            <button type="submit">검색</button>
+          </span>
+        </div>
+        <div class="RightSideQuestionBottom">
+          <div class="fisrtline">
+            <span>번호</span>
+            <span>제목</span>
+            <span>글쓴이</span>
+            <span>일시</span>
+            <span>조회수</span>
+          </div>
+          <div class="secondline">
+            <span>1</span>
+            <span>힌남노가 끝난 뒤, ...</span>
+            <span>홍길순</span>
+            <span>2022-09-08</span>
+            <span>7</span>
+          </div>
+          <div class="thirdline">
+            <span>2</span>
+            <span>카카오 워크를 오픈하였는데,</span>
+            <span>홍길동</span>
+            <span>2022-09-05</span>
+            <span>21</span>
+          </div>
+          <div class="fourthline">
+            <span>3</span>
+            <span>문화탐방 후기</span>
+            <span>이순신</span>
+            <span>2022-09-05</span>
+            <span>171</span>
+          </div>
+        </div>
+        <div class="RightSideQuestionBottomCenter">
+          <span>
+            <i class="fa-solid fa-caret-left"></i>
+            이전 1 다음
+            <i class="fa-solid fa-caret-right"></i>
+          </span>
+          <span>
+            <button type="submit">목록</button>
+            <button type="submit">글쓰기</button>
+          </span>
+        </div>
       </div>
     </div>
   </body>

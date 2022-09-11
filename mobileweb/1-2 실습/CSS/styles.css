@@ -1,23 +1,323 @@
-.navbar{
-    display: flex;
-    justify-content: flex-end;
-    padding: 1rem 1rem;
-    margin-right: 1.5rem;
+body {
+  width: 95vh;
+  height: 80vh;
+  font-size: 1.2rem;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 1fr 16fr;
 }
 
-
-.navbar span:nth-child(n+2) {
-    position: relative;
-    margin-left: 5px;
-    padding-left: 10px;
+.Navbar {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  display: flex;
+  justify-content: flex-end;
+  padding: 1rem 1rem;
 }
 
-.navbar span:nth-child(n+2)::after {
-    position:absolute;
-    left: 0;
-    top: 3px;
-    content: "";
-    width: 1px;
-    height: 18px;
-    background-color: black;
+.Navbar span:nth-child(n + 2) {
+  position: relative;
+  margin-left: 5px;
+  padding-left: 10px;
+}
+
+.Navbar span:nth-child(n + 2)::after {
+  position: absolute;
+  left: 0;
+  top: 3px;
+  content: "";
+  width: 1px;
+  height: 18px;
+  background-color: black;
+}
+
+.LeftSide {
+  display: grid;
+  grid-column: 1/2;
+  grid-row: 2/3;
+  grid-template-rows: 0.2fr 1fr 3fr;
+  gap: 2rem;
+}
+
+.logo {
+  grid-row: 1/2;
+  display: flex;
+  width: 19rem;
+}
+.logo img {
+  width: 5rem;
+  height: 5rem;
+}
+.logo span {
+  padding: 0 1rem;
+  font-size: 3rem;
+  color: blue;
+  font-weight: bolder;
+}
+
+.LeftSideLogin {
+  grid-row: 2/3;
+  width: 18rem;
+  height: 13rem;
+  border-radius: 10px;
+  border: 2px solid gray;
+  background-color: #f2f2f2;
+  padding: 1rem 1rem;
+}
+
+.LeftSideLogin div:first-child {
+  font-size: 2rem;
+  display: flex;
+  justify-content: flex-start;
+  gap: 1.5rem;
+}
+
+.LeftSideLogin div:first-child div:first-child {
+  color: orange;
+}
+
+.LeftSideLogin div:nth-child(2) {
+  display: flex;
+  align-items: center;
+}
+.LeftSideLogin div:nth-child(2) span:first-child {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  padding: 1rem;
+}
+
+.LeftSideLogin input {
+  width: 11rem;
+  height: 2rem;
+}
+
+.LeftSideLogin div:nth-child(2) span:last-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 5.5rem;
+  height: 4.5rem;
+  background: linear-gradient(to bottom right, white, green);
+  border-radius: 10px;
+}
+
+.LeftSideLogin div:nth-child(3) {
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  height: 1.5rem;
+  margin-top: 1rem;
+}
+.LeftSideLogin div:nth-child(3) span:first-child {
+  font-weight: bolder;
+}
+
+.LeftSideLogin div:nth-child(3) span:nth-child(2) {
+  width: 0.1rem;
+  color: #c9bbbb;
+  background-color: #c9bbbb;
+}
+
+.LeftSideLogin div:nth-child(3) span:last-child {
+  color: #c9bbbb;
+}
+
+.LeftSidCommunity {
+  grid-row: 3/4;
+  width: 17rem;
+  height: 40rem;
+  border-radius: 10px;
+  border: 2px solid gray;
+  background-color: green;
+    padding:1rem 1rem;
+}
+
+.LeftSidCommunity div:first-child {
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+  width: 16rem;
+  height: 6rem;
+}
+
+.LeftSidCommunity div:first-child div:first-child {
+  width: 8rem;
+  height: 7rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 1rem;
+  margin-left: 0.5rem;
+}
+
+.LeftSidCommunity div:first-child div:first-child div:last-child {
+  font-size: 1.3rem;
+  margin-left: 0.5rem;
+}
+.LeftSidCommunity img {
+  width: 6rem;
+  height: 6rem;
+  padding: 1rem;
+}
+
+.middleline {
+  width: 16rem;
+  border-bottom: 1px solid white;
+  margin-top: 2.2rem;
+}
+
+.LeftSidCommunitybottom {
+  margin-top: 2rem;
+  width: 14rem;
+  height: 25rem;
+  padding: 1rem 1rem;
+  border: 1px solid white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 2rem;
+    background-color: white;
+}
+
+.RightSide {
+  display: grid;
+  grid-column: 2/3;
+  grid-row: 2/3;
+  grid-template-rows: 0.2fr 1fr 1.2fr 0.2fr;
+  gap: 2rem;
+}
+
+.RightSideNavbar {
+  grid-row: 1/2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1rem;
+  background-color: green;
+  border-radius: 20px;
+  font-size: 20px;
+  color: white;
+  margin-left: 1rem;
+}
+
+.RightSideNavbar span:nth-child(n + 2) {
+  position: relative;
+  margin-left: 5px;
+  padding-left: 6rem;
+}
+
+.RightSideNavbar span:nth-child(n + 2)::after {
+  position: absolute;
+  left: 0;
+  top: 3px;
+  content: "";
+  width: 1px;
+  height: 18px;
+  background-color: white;
+}
+
+.RightSideCommunity {
+  grid-row: 2/3;
+  margin-left: 1rem;
+}
+
+.RightSideCommunity img {
+  padding: 10px;
+  width: 80rem;
+  height: 24rem;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+.RightSideQuestion {
+  font-size: 1.2rem;
+  grid-row: 3/4;
+}
+
+.RigthSideQuestionHeader {
+  font-size: 1.5rem;
+  font-weight: bolder;
+  border-bottom: 2px solid #c9adad;
+}
+
+.RightSideQuestionSub {
+  display: grid;
+  grid-template-columns: 5fr 3fr;
+  padding: 1rem 1rem;
+}
+
+.RightSideQuestionSub span:last-child {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.RightSideQuestionBottom {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+}
+
+.fisrtline {
+  display: grid;
+  grid-template-columns: 0.7fr 8fr 1fr 1fr 1fr;
+  grid-row: 1/2;
+  grid-column: span 5;
+  background-color: #e2cccc;
+  border-top: 3px solid gray;
+  padding: 1rem 1rem;
+  text-align: center;
+}
+
+.secondline span:nth-child(2),
+.thirdline span:nth-child(2),
+.fourthline span:nth-child(2) {
+  text-align: left;
+}
+
+.secondline {
+  display: grid;
+  grid-template-columns: 0.7fr 8fr 1fr 1fr 1fr;
+  grid-row: 2/3;
+  grid-column: span 5;
+  border-bottom: 2px solid gray;
+  padding: 1rem 1rem;
+  text-align: center;
+}
+
+.thirdline {
+  display: grid;
+  grid-template-columns: 0.7fr 8fr 1fr 1fr 1fr;
+  grid-row: 3/4;
+  grid-column: span 5;
+  border-bottom: 2px solid gray;
+  padding: 1rem 1rem;
+  text-align: center;
+}
+
+.fourthline {
+  display: grid;
+  grid-template-columns: 0.7fr 8fr 1fr 1fr 1fr;
+  grid-row: 4/5;
+  grid-column: span 5;
+  border-bottom: 2px solid gray;
+  padding: 1rem 1rem;
+  text-align: center;
+}
+
+.RightSideQuestionBottomCenter {
+  display: grid;
+  grid-template-columns: 8fr 3fr;
+  padding: 1rem 1rem;
+}
+
+.RightSideQuestionBottomCenter span:first-child {
+  display: flex;
+  justify-content: center;
+}
+
+.RightSideQuestionBottomCenter span:last-child {
+  display: flex;
+  justify-content: flex-end;
 }
