@@ -26,13 +26,13 @@
           <div>Member</div>
           <div>Login</div>
         </div>
-        <div>
+        <form id="LoginForm">
           <span>
-            <input type="text" />
-            <input type="password" />
+            <input type="text" id="id" />
+            <input type="password" id="password"/>
           </span>
-          <span>로그인</span>
-        </div>
+          <input type="submit" value="로그인" id="LoginBtn"/>
+        </form>
         <div>
           <span>회원가입</span>
           <span></span>
@@ -81,8 +81,8 @@
               <option>글쓴이</option>
               <option>제목+글쓴이</option>
             </select>
-            <input type="password" />
-            <button type="submit">검색</button>
+            <input type="search" />
+            <button type="submit" id="firstBtn">검색</button>
           </span>
         </div>
         <div class="RightSideQuestionBottom">
@@ -122,11 +122,12 @@
             <i class="fa-solid fa-caret-right"></i>
           </span>
           <span>
-            <button type="submit">목록</button>
-            <button type="submit">글쓰기</button>
+            <button type="submit" id="SecondBtn">목록</button>
+            <button type="submit" id="ThirdBtn">글쓰기</button>
           </span>
         </div>
       </div>
     </div>
+    <script src="JS/CheckId.js"></script>
   </body>
 </html>

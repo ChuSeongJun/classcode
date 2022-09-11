@@ -76,11 +76,11 @@ body {
   color: orange;
 }
 
-.LeftSideLogin div:nth-child(2) {
+#LoginForm {
   display: flex;
   align-items: center;
 }
-.LeftSideLogin div:nth-child(2) span:first-child {
+#LoginForm span:first-child {
   display: flex;
   flex-direction: column;
   gap: 3px;
@@ -92,7 +92,7 @@ body {
   height: 2rem;
 }
 
-.LeftSideLogin div:nth-child(2) span:last-child {
+#LoginBtn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -100,6 +100,7 @@ body {
   height: 4.5rem;
   background: linear-gradient(to bottom right, white, green);
   border-radius: 10px;
+  font-size: 1.1rem;
 }
 
 .LeftSideLogin div:nth-child(3) {
@@ -254,6 +255,12 @@ body {
   justify-content: space-evenly;
 }
 
+#firstBtn{
+  background-color:#3a3030;
+  color: white;
+  width: 5rem;
+  height: 2rem;
+}
 .RightSideQuestionBottom {
   display: grid;
   grid-template-rows: repeat(4, 1fr);
@@ -320,4 +327,19 @@ body {
 .RightSideQuestionBottomCenter span:last-child {
   display: flex;
   justify-content: flex-end;
+  gap:1rem;
+}
+
+#SecondBtn{
+  background-color:gray;
+  color: white;
+  width: 4rem;
+  height: 2rem;
+}
+
+#ThirdBtn{
+  background-color:#3a3030;
+  color: white;
+  width: 5rem;
+  height: 2rem;
 }
