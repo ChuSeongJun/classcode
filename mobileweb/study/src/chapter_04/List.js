@@ -1,7 +1,7 @@
 const list = [
   {
     img: "image1.jpg",
-    time: "2022-9-19 20:20:00",
+    time: "2022-9-28 19:20:00",
     title: "시간한정 특가세일 1탄",
     description:
       "갤럭시탭S8 Ultra 14.6 WiFi 128GB 최첨단 파워풀한 S펜, 멀티윈도우, 고성능!",
@@ -10,7 +10,7 @@ const list = [
   },
   {
     img: "image2.jpg",
-    time: "2022-9-20 14:20:00",
+    time: "2022-9-26 11:25:00",
     title: "시간한정 특가세일 2탄",
     description: "BS-BT101 블루투스헤드폰5.0 실감나는 풍부한 사운드",
     oldprice: "350,000원",
@@ -18,7 +18,7 @@ const list = [
   },
   {
     img: "image3.jpg",
-    time: "2022-9-19 23:24:00",
+    time: "2022-10-23 23:24:00",
     title: "시간한정 특가세일 3탄",
     description: "먹으면 단백질 보충되는 프로틴",
     oldprice: "50000원",

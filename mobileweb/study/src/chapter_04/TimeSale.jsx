@@ -12,6 +12,30 @@ function getDeadline(endDate) {
   return hour.toString(10) + ":" + min.toString(10) + ":" + sec.toString(10);
 }
 
+const e = React.createElement;
+
+class LikeButton extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      liked: false
+    };
+  }
+
+  render() {
+    if (this.state.liked) {
+      return "구매성공";
+    }
+
+    return e("button", {
+      onClick: () => this.setState({
+        liked: true
+      })
+    }, "긴급 구매");
+  }
+
+}
+
 function Card(props) {
   return (
     <div className="card">
@@ -23,6 +47,7 @@ function Card(props) {
         <h3 className="cardprice">
           <del style={{ color: "gray" }}>{props.oldprice}</del> {props.price}
         </h3>
+        <LikeButton/>
       </div>
     </div>
   );
