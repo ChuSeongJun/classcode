@@ -24,14 +24,15 @@ class LikeButton extends React.Component {
 
   render() {
     if (this.state.liked) {
-      return "구매성공";
+      return <div className="AfterBtn">구매 완료</div>;
     }
 
     return e("button", {
       onClick: () => this.setState({
         liked: true
       })
-    }, "긴급 구매");
+    },
+        <div className="BeforeBtn">긴급 구매</div>);
   }
 
 }

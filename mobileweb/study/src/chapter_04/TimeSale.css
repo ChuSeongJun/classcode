@@ -39,10 +39,26 @@
     margin-top:0.6rem;
 }
 
-.Btn{
+.BeforeBtn{
+    display: flex;
+    justify-content: center;
+    align-content: center;
     width:8rem;
     height: 5rem;
     background-color: red;
+    color: white;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
+.AfterBtn{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width:8rem;
+    height: 5rem;
+    background-color: black;
     color: white;
     border-radius: 10px;
     font-size: 1.5rem;
