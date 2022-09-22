@@ -1,11 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-import TimeSale from "./chapter_04/TimeSale";
+import MovieList from "./homework2/MovieList";
+
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <TimeSale />
+      <MovieList/>
   </React.StrictMode>
 );
