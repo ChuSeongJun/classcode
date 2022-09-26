@@ -20,7 +20,7 @@ class LikeButton extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      liked: false
+      liked: false,
     };
   }
 
@@ -29,14 +29,17 @@ class LikeButton extends React.Component {
       return <div className="AfterBtn">구매 완료</div>;
     } //조건 충족시 구매완료로 바뀜
 
-    return e("button", {
-      onClick: () => this.setState({
-        liked: true
-      }) //버튼을 누르면 state가 liked가 트루로
-    },
-        <div className="BeforeBtn">긴급 구매</div>); //평소는 긴급구매 버튼
+    return e(
+      "button",
+      {
+        onClick: () =>
+          this.setState({
+            liked: true,
+          }), //버튼을 누르면 state가 liked가 트루로
+      },
+      <div className="BeforeBtn">긴급 구매</div>
+    ); //평소는 긴급구매 버튼
   }
-
 }
 
 function Card(props) {
@@ -50,7 +53,7 @@ function Card(props) {
         <h3 className="cardprice">
           <del style={{ color: "gray" }}>{props.oldprice}</del> {props.price}
         </h3>
-        <LikeButton/>
+        <LikeButton />
       </div>
     </div>
   );
@@ -61,8 +64,8 @@ function TimeSale(props) {
     <div className="wrapper">
       {list.map((e, n) => {
         return (
-            //n을 인덱스로 받고
-            //e를 인수로해서 각 자리에 있는 값들을 한개씩 불러와서 저장한다.
+          //n을 인덱스로 받고
+          //e를 인수로해서 각 자리에 있는 값들을 한개씩 불러와서 저장한다.
           <div key={n}>
             <Card
               img={e.img}
