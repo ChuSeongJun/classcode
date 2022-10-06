@@ -5,8 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7b55e890-eeef-4ef0-9d73-f7736529a7f5" name="변경" comment="">
-      <change beforePath="$PROJECT_DIR$/3주차/prime-worker.js" beforeDir="false" afterPath="$PROJECT_DIR$/3주차/prime-worker.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3주차/worker_data.js" beforeDir="false" afterPath="$PROJECT_DIR$/3주차/worker_data.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/5주차/basicRoute.js" beforeDir="false" afterPath="$PROJECT_DIR$/5주차/basicRoute.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/5주차/basicServer.js" beforeDir="false" afterPath="$PROJECT_DIR$/5주차/basicServer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/5주차/body.js" beforeDir="false" afterPath="$PROJECT_DIR$/5주차/body.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/5주차/mimeType.js" beforeDir="false" afterPath="$PROJECT_DIR$/5주차/mimeType.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/5주차/morgan.js" beforeDir="false" afterPath="$PROJECT_DIR$/5주차/morgan.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/5주차/notFound.js" beforeDir="false" afterPath="$PROJECT_DIR$/5주차/notFound.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/5주차/redirect.js" beforeDir="false" afterPath="$PROJECT_DIR$/5주차/redirect.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/5주차/requestQuery.js" beforeDir="false" afterPath="$PROJECT_DIR$/5주차/requestQuery.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/5주차/responseBasic.js" beforeDir="false" afterPath="$PROJECT_DIR$/5주차/responseBasic.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/5주차/staticFile.js" beforeDir="false" afterPath="$PROJECT_DIR$/5주차/staticFile.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +27,9 @@
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="PackageJsonUpdateNotifier">
+    <dismissed value="$PROJECT_DIR$/package.json" />
   </component>
   <component name="ProjectId" id="2ElRXdDsRXXCtnKvuex48cLEax7" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -31,7 +43,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/추성준/Desktop/Frontend",
+    "last_opened_file_path": "C:/Users/추성준/Desktop/classcode/Webdb",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -50,10 +62,22 @@
       <updated>1663168224396</updated>
       <workItem from="1663168225545" duration="3236000" />
       <workItem from="1663213870056" duration="20000" />
+      <workItem from="1664379131934" duration="3317000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

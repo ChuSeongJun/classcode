@@ -20,7 +20,7 @@ const comments = [
   },
   {
     image: "movie3.jpg",
-    color: "35b233",
+    color: "#35b233",
     title: "반지의 제왕",
     sub: "마침내 프로도와 그의 친구들, 엘프족인 레골라스, 난장이족 김리, 두명의 인간 전사 아라곤과 보로미르, 그리고 마법사 간달프로 구성된 반지 원정대가 길고도 험난한 여정을 떠나게 되는데...",
     year: 2001,
@@ -49,6 +49,7 @@ function MovieList() {
             year={comment.year}
             genre={comment.genre}
           />
+          // map함수를 사용해 한개씩 불러오기
         );
       })}
     </div>
