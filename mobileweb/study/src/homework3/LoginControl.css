@@ -1,0 +1,9 @@
+.login {
+    width: 200px;
+    height: 150px;
+    background-color: orange; /* 바탕색 */
+    border: solid 1px lightgray;
+    border-radius: 10px; /* 모서리 둥글게 */
+    box-shadow: 6px 6px 5px #888888; /* 입체감 스타일 */
+    text-align: center;
+}
