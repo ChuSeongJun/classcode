@@ -5,11 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2f347733-c80b-4158-a64d-c3aa8ffbfc0f" name="변경" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/homework/Airbnb.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/homework/Airbnb.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/homework/AirbnbList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/homework/AirbnbList.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/homework2/Movie.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/homework2/Movie.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/homework2/MovieList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/homework2/MovieList.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/homework4/ToDoList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/homework4/ToDoList.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -34,7 +31,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/추성준/Desktop/project-frontend",
+    "last_opened_file_path": "C:/Users/j9498/OneDrive/바탕 화면/classcode/Webdb",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.standard": "true",
     "node.js.detected.package.tslint": "true",
@@ -57,6 +54,8 @@
       <updated>1663841596599</updated>
       <workItem from="1663841597883" duration="2241000" />
       <workItem from="1663847688695" duration="24000" />
+      <workItem from="1665445497823" duration="3570000" />
+      <workItem from="1665452924661" duration="30000" />
     </task>
     <servers />
   </component>

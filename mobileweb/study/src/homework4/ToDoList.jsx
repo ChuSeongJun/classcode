@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, {useRef, useState} from "react";
 import "./ToDoList.css";
 function ToDoList() {
   const [inputItem, setInputItem] = useState("");
@@ -7,9 +7,18 @@ function ToDoList() {
     { id: "2", value: "점심먹기" },
     { id: "3", value: "과제하기" },
   ]);
+  const localContentInput = useRef();
   const [isEdit, setIsEdit] = useState(false);
   const toggleIsEdit = () => setIsEdit(!isEdit);
   const [localcontent, setLocalContent] = useState("");
+
+
+  // const FixList =() =>{
+  //   setItemList((itemList)=>{
+  //     itemList
+  //   }
+  // }
+
 
   const AddToDoList = () => {
     setItemList((prevItem) => {

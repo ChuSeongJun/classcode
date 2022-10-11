@@ -7,6 +7,6 @@ import ToDoList2 from "./use/ToDoList2";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <ToDoList2 />
+    <ToDoList />
   </React.StrictMode>
 );
