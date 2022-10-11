@@ -1,4 +1,4 @@
-import React, {useRef, useState} from "react";
+import React, { useState } from "react";
 import "./ToDoList.css";
 function ToDoList() {
   const [inputItem, setInputItem] = useState("");
@@ -7,18 +7,17 @@ function ToDoList() {
     { id: "2", value: "점심먹기" },
     { id: "3", value: "과제하기" },
   ]);
-  const localContentInput = useRef();
+
   const [isEdit, setIsEdit] = useState(false);
   const toggleIsEdit = () => setIsEdit(!isEdit);
   const [localcontent, setLocalContent] = useState("");
 
-
-  // const FixList =() =>{
-  //   setItemList((itemList)=>{
-  //     itemList
-  //   }
-  // }
-
+  const onEdit = () => {
+    const nextTodoList = itemList.map((item) =>
+      item.id === itemList.id ? { ...item, inputItem: localcontent } : item
+    );
+    setItemList(nextTodoList);
+  };
 
   const AddToDoList = () => {
     setItemList((prevItem) => {
@@ -72,7 +71,7 @@ function ToDoList() {
                 {isEdit ? (
                   <>
                     <button onClick={toggleIsEdit}>수정 취소</button>
-                    <button onClick={toggleIsEdit}>수정 완료</button>
+                    <button onClick={onEdit}>수정 완료</button>
                   </>
                 ) : (
                   <></>
