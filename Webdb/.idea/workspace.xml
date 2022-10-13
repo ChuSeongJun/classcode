@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7b55e890-eeef-4ef0-9d73-f7736529a7f5" name="변경" comment="">
-      <change afterPath="$PROJECT_DIR$/learn-sequelize/models/comment.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learn-sequelize/models/user.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mobileweb/study/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../mobileweb/study/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mobileweb/study/src/homework4/ToDoList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../mobileweb/study/src/homework4/ToDoList.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mobileweb/study/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../mobileweb/study/src/index.js" afterDir="false" />
-    </list>
+    <list default="true" id="7b55e890-eeef-4ef0-9d73-f7736529a7f5" name="변경" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -38,7 +31,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/j9498/OneDrive/바탕 화면/classcode/mobileweb",
+    "last_opened_file_path": "C:/Users/j9498/OneDrive/바탕 화면/classcode/Webdb",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -62,6 +55,7 @@
       <workItem from="1664630664786" duration="1222000" />
       <workItem from="1664707875142" duration="3443000" />
       <workItem from="1665452950953" duration="2224000" />
+      <workItem from="1665559950351" duration="21000" />
     </task>
     <servers />
   </component>
