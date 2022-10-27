@@ -4,7 +4,34 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7b55e890-eeef-4ef0-9d73-f7736529a7f5" name="변경" comment="" />
+    <list default="true" id="7b55e890-eeef-4ef0-9d73-f7736529a7f5" name="변경" comment="">
+      <change afterPath="$PROJECT_DIR$/nodebird-api/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nodebird-api/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nodebird-api/config/config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nodebird-api/models/domain.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nodebird-api/models/hashtag.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nodebird-api/models/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nodebird-api/models/post.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nodebird-api/models/user.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nodebird-api/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nodebird-api/passport/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nodebird-api/passport/kakaoStrategy.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nodebird-api/passport/localStrategy.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nodebird-api/routes/auth.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nodebird-api/routes/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nodebird-api/routes/middlewares.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nodebird-api/routes/v1.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nodebird-api/routes/v2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nodebird-api/views/error.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nodebird-api/views/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nodecat/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nodecat/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nodecat/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nodecat/routes/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nodecat/routes/main.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nodecat/views/error.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,7 +44,8 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="PackageJsonUpdateNotifier">
-    <dismissed value="$PROJECT_DIR$/package.json" />
+    <dismissed value="$PROJECT_DIR$/node-auction/package.json" />
+    <dismissed value="$PROJECT_DIR$/nodebird-api/package.json" />
   </component>
   <component name="ProjectId" id="2ElRXdDsRXXCtnKvuex48cLEax7" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -25,21 +53,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/j9498/OneDrive/바탕 화면/classcode/mobileweb",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/j9498/OneDrive/바탕 화면/classcode/Webdb/nodebird-api&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\j9498\OneDrive\바탕 화면\classcode\Webdb\nodebird-api" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="애플리케이션 수준" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="디폴트 작업">
@@ -57,6 +90,8 @@
       <workItem from="1665452950953" duration="2224000" />
       <workItem from="1665559950351" duration="21000" />
       <workItem from="1665640412142" duration="584000" />
+      <workItem from="1666656313289" duration="11779000" />
+      <workItem from="1666670778409" duration="479000" />
     </task>
     <servers />
   </component>
