@@ -1,0 +1,24 @@
+
+p {
+    padding: 1rem;
+    /*패딩 1rem*/
+    border-radius: 15px;
+    /*테두리 15px*/
+    font-size: 1.25rem;
+    /*폰트사이즈 1.25rem*/
+    border: 2px solid black;
+    /*테두리 2px solid 노란색 줄*/
+}
+
+button{
+    background-color: white;
+    /*배경색: 흰색*/
+    font-size: 1rem;
+}
+
+button:hover{
+    background-color: black;
+    /*배경색 검은색*/
+    color: white;
+    /*색깔 흰색*/
+}

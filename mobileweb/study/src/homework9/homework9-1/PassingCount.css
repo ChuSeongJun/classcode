@@ -1,0 +1,63 @@
+* {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+.parent {
+    display: flex;
+    /*flex로 배치*/
+    flex-direction: column;
+    /*주라인 컬럼*/
+    align-content: center;
+    /*가운데 정렬*/
+    background-color: lightgray;
+    /*배경색*/
+    text-align: center;
+/*    위치 센터*/
+}
+.layout {
+    display: flex;
+    /*flex로 배치*/
+    flex-direction: row;
+    /*주 라인 row*/
+    align-content: center;
+    /*가운데 정렬*/
+    justify-content: center;
+    /*주 라인 가운데*/
+    height: 20vh;
+    /*높이 20view height*/
+    padding: 10px 10px 10px 10px;
+/*    4방향 패딩 10px*/
+}
+button {
+    box-shadow: 0 3px 16px rgba(0,79,255,0.3);
+    margin: 5px;
+/*    마진 5px*/
+}
+.first {
+    background-color: pink;
+    /*배경색 pink*/
+    text-align: center;
+    /*배치 중앙*/
+    padding: 10px 10px 10px 10px;
+    /*4방향 패딩 10px*/
+    margin: 5px;
+    /*마진 5px*/
+    border: 1px solid black;
+/*    border 1px solid 검은색*/
+}
+.second {
+    background-color: yellow;
+    /*배경색 노란색*/
+    text-align: center;
+    /*배치 중앙*/
+    padding: 10px 10px 10px 10px;
+    margin: 5px;
+    border: 3px solid black;
+}
+.third {
+    background-color: lightskyblue;
+    text-align: center;
+    padding: 10px 10px 10px 10px;
+    margin: 5px;
+    border: 1px solid black;
+}
