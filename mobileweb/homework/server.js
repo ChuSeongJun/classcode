@@ -4,7 +4,7 @@ const path = require("path");
 const bodyParser = require("body-parser");
 // express 환경설정
 app.use(express.json());
-app.use(express.static(path.join(__dirname, "z")));
+app.use(express.static(path.join(__dirname, "textbook/build")));
 app.use(bodyParser.urlencoded({ extended: false }));
 var keyid = 3; // 다음에 추가될 회원에게 부여할 key값
 var userList = [
