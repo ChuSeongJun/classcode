@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
-const serverURL = "http://localhost:65010/users";
+const serverURL = "http://localhost:65020/users";
 function App() {
   const [userData, setUserData] = useState(null);
   const getUserData = () => {
@@ -25,6 +25,7 @@ function App() {
       body: JSON.stringify({ name, id, passwd }),
     }).then(getUserData()); // 등록한 데이터를 다시 가져옴
   };
+
   return (
     <>
       <div>
@@ -38,7 +39,16 @@ function App() {
       </div>
       <p></p>
       <div>
-        <h2>회원목록</h2>
+        <h2>회원확인</h2>
+        <form onSubmit={onSubmitHandler}>
+          <input type="text" name="id" placeholder="아이디" />
+          <input type="text" name="passwd" placeholder="암호" />
+          <button type="submit">확인</button>
+        </form>
+      </div>
+      <p></p>
+      <div>
+        <h2>회원명단</h2>
         <ol>
           {userData === null ? (
             <p>서버에서 데이터를 가져오는중...</p>
@@ -50,7 +60,6 @@ function App() {
               </li>
             ))
           )}
-          }
         </ol>
       </div>
     </>
