@@ -1,13 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-import PassingCount from "./homework9/homework9-1/PassingCount";
-import ProfileCard from "./homework9/homework9-2/ProfileCard";
+import ContextApp from "./context/ContextApp";
+import ContextHook from "./context/ContextHook";
+import PageColor from "./context/PageColor";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    {/*<PassingCount />*/}
-    <ProfileCard />
+    <PageColor />
   </React.StrictMode>
 );
