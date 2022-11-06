@@ -121,6 +121,36 @@
             });
         });
     </script>
+    <script>
+
+        function work() {
+
+
+            var text = document.getElementById("a").value;
+            if(text != "") {
+                alert(text+"을 선택하셨습니다.");
+            }
+
+        }
+
+        function date(){
+            const day=document.querySelector("#input_date").value;
+
+            if(day !=""){
+                alert(day+"을 선택하셨습니다.")
+            }
+        }
+
+
+    </script>
+
 </head>
-<body></body>
+<body>
+<input type='text' id='a'  placeholder='영화 제목 입력' />
+
+<input type='button' value='영화 입력 완료' onclick='work()'/>
+
+<input id="input_date" type="date">
+<input id="input_submit" type="submit" onclick="date()" value="날짜 선택">
+</body>
 </html>

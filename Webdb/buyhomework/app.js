@@ -56,8 +56,8 @@ io.on("connection", (socket) => {
     });
   }
 
-  var cart = {};
   let Allcart = [];
+  var cart = {};
 
   socket.on("cart", function (index) {
     products[index].count--;

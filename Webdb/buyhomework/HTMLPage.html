@@ -33,28 +33,26 @@
 
                     $(this).attr("toggle", "off");
 
-                    // 카운트 다운
-                    var num = 60 * 10; // 몇분을 설정할지의 대한 변수 선언
-                    var myVar;
+
+                    var NowTime = 120
+                    var timer;
                     function time() {
-                        myVar = setInterval(alertFunc, 1000);
+                        timer = setInterval(alertFunc, 1000);
                     }
                     time();
 
                     function alertFunc() {
-                        var min = num / 60;
-                        min = Math.floor(min);
+                        var minute = NowTime / 60;
+                        minute = Math.floor(minute);
 
-                        var sec = num - 60 * min;
-                        console.log(min);
-                        console.log(sec);
+                        var second = NowTime - 60 * minute;
+                        console.log(minute+"분"+second+"초");
 
-                        var $input = $(`.${index}`).val(min + "분" + sec + "초");
 
-                        if (num == 0) {
-                            clearInterval(myVar); // num 이 0초가 되었을대 clearInterval로 타이머 종료
+                        if (NowTime == 0) {
+                            clearInterval(timer);
                         }
-                        num--;
+                        NowTime--;
                     }
                 } else {
                     var index = $(this).attr("data-index");
@@ -75,13 +73,12 @@
             $("#BuyBtn").click(function () {
                 socket.emit("BuyBtn");
 
-                let chk = 0;
+                var num = 0;
 
                 socket.on("Allcart", function (data) {
-                    if (chk === 0 && confirm("모두 구매하시겠습니까?")) {
-                        console.log(data.cart);
+                    if (num === 0 && confirm("장바구니에 담긴것을 구매하시겠습니까?")) {
 
-                        chk = 1;
+                        num = 1;
                         window.location.reload();
                         for (let x of data.cart) {
                             $("li").remove(`#${x}`);
@@ -108,7 +105,6 @@
     </div>
     <div data-role="content">
         <ul id="listview" data-role="listview" data-inset="true" data-filter="true">
-            <button id="BuyBtn">모두 구매</button>
             <li data-role="list-divider">products</li>
             <% products.forEach(function (item, index) { %>
             <li class="product" data-index="<%= item.index %>">
@@ -119,8 +115,10 @@
                     <span class="ui-li-count"><%= item.count %></span>
                 </a>
                 <a href="#" data-icon="check" data-index="<%= item.index %>"></a>
+
             </li>
             <% }); %>
+            <button id="BuyBtn">장바구니 구매</button>
         </ul>
     </div>
 </div>
