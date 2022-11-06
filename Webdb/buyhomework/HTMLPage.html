@@ -8,7 +8,6 @@
     <script src="/socket.io/socket.io.js"></script>
     <script>
         $(document).ready(function () {
-            //함수를 선언합니다.
             function changeIcon(target, from, to) {
                 alert(from + to);
                 $(target).removeClass(from).addClass(to);
@@ -18,53 +17,80 @@
                 $(`li[data-index=' + index +'] .ui-li-count`).html(count);
             }
 
-            //소켓을 생성합니다.
             var socket = io.connect();
 
-            //소켓이벤트를 연결합니다.
-            socket.on('count', function (data) {
-                // 물건 개수를 변경합니다.
+            socket.on("count", function (data) {
                 changeCount(data.index, data.count);
             });
 
-            // 문서 객체 이벤트를 연결합니다.
-            $('.product > a[data-icon]').click(function () {
-                if ($(this).attr('toggle') != 'off') {
-                    // 변수를 선언합니다.
-                    var index = $(this).attr('data-index');
+            $(".product > a[data-icon]").click(function () {
+                if ($(this).attr("toggle") != "off") {
+                    var index = $(this).attr("data-index");
 
-                    // 소켓 이벤트를 발생시킵니다.
-                    socket.emit('cart', Number(index));
+                    socket.emit("cart", Number(index));
 
-                    // 아이콘 및 테마 변환
-                    changeIcon(this, 'ui-icon-check', 'ui-icon-back');
+                    changeIcon(this, "ui-icon-check", "ui-icon-back");
 
-                    // 토글 변수를 변경합니다.
-                    $(this).attr('toggle', 'off');
-                } else {
-                    // 변수를 선언합니다.
-                    var index = $(this).attr('data-index');
+                    $(this).attr("toggle", "off");
 
-
-                    // 구매 의사를 물어봅니다.
-                    if (confirm('물건을 구매하겠습니까?')) {
-                        // 소켓 이벤트를 발생시킵니다.
-                        socket.emit('buy', Number(index));
-
-                        // 리스트 아이템을 제거합니다.
-                        $(this).parent().remove();
-                        $('#listview').listview('refresh');
-                    } else {
-                        // 소켓 이벤트를 발생시킵니다.
-                        socket.emit('return', Number(index));
-                        // 아이콘 및 테마 변환
-                        changeIcon(this, 'ui-icon-back', 'ui-icon-check');
+                    // 카운트 다운
+                    var num = 60 * 10; // 몇분을 설정할지의 대한 변수 선언
+                    var myVar;
+                    function time() {
+                        myVar = setInterval(alertFunc, 1000);
                     }
-                    // 토글 변수를 변경합니다.
-                    $(this).attr('toggle', 'on');
-                }
+                    time();
 
+                    function alertFunc() {
+                        var min = num / 60;
+                        min = Math.floor(min);
+
+                        var sec = num - 60 * min;
+                        console.log(min);
+                        console.log(sec);
+
+                        var $input = $(`.${index}`).val(min + "분" + sec + "초");
+
+                        if (num == 0) {
+                            clearInterval(myVar); // num 이 0초가 되었을대 clearInterval로 타이머 종료
+                        }
+                        num--;
+                    }
+                } else {
+                    var index = $(this).attr("data-index");
+
+                    if (confirm("물건을 구매하겠습니까?")) {
+                        socket.emit("buy", Number(index));
+
+                        $(this).parent().remove();
+                        $("#listview").listview("refresh");
+                    } else {
+                        socket.emit("return", Number(index));
+                        changeIcon(this, "ui-icon-back", "ui-icon-check");
+                    }
+                    $(this).attr("toggle", "on");
+                }
             });
+
+            $("#BuyBtn").click(function () {
+                socket.emit("BuyBtn");
+
+                let chk = 0;
+
+                socket.on("Allcart", function (data) {
+                    if (chk === 0 && confirm("모두 구매하시겠습니까?")) {
+                        console.log(data.cart);
+
+                        chk = 1;
+                        window.location.reload();
+                        for (let x of data.cart) {
+                            $("li").remove(`#${x}`);
+                        }
+
+                    }
+                });
+            });
+
         });
     </script>
 </head>
@@ -73,8 +99,16 @@
     <div data-role="header">
         <h1>Store</h1>
     </div>
+    <div>
+    로그인 하는곳
+    <br>
+    ID : 마스터 아이디 1234 <input type="text" placeholder="ID를 입력하세요" id="userid"><br>
+    비밀번호 : 마스터 비밀번호 1234<input type="password" placeholder="비밀번호" id="userpw">
+    <input type="button" value="로그인" id="signinButton">
+    </div>
     <div data-role="content">
         <ul id="listview" data-role="listview" data-inset="true" data-filter="true">
+            <button id="BuyBtn">모두 구매</button>
             <li data-role="list-divider">products</li>
             <% products.forEach(function (item, index) { %>
             <li class="product" data-index="<%= item.index %>">
@@ -90,5 +124,27 @@
         </ul>
     </div>
 </div>
+<script type="text/javascript">
+
+    const signinButton = document.getElementById("signinButton")
+    signinButton.addEventListener('click', signinFunc)
+
+    function signinFunc () {
+        const userid = document.getElementById("userid").value;
+        const userpw = document.getElementById("userpw").value;
+
+
+        if(userid == "1234" && userpw == "1234") {
+            alert("로그인 성공");
+            console.log("로그인 성공했습니다.");
+        } else {
+            alert("로그인 실패");
+            console.log("로그인 실패했습니다.");
+        }
+
+
+    }
+
+</script>
 </body>
 </html>
