@@ -52,7 +52,6 @@
                         var second = NowTime - 60 * minute;
                         console.log(minute+"분"+second+"초");
 
-
                         //시간이 타이머가 0이 되었을떄 조건 설정
                         if (NowTime == 0) {
                             //타이머 중지
@@ -84,9 +83,9 @@
 
                 socket.on("Allcart", function (data) {
                     //조건 충족시 장바구니에 담긴것 구매 가능
-                    if (FirstState === 0 && confirm("장바구니에 담긴것을 구매하시겠습니까?")) {
-
+                    if (FirstState === 0 ) {
                         FirstState = 1;
+                        confirm("장바구니에 담긴것을 구매하시겠습니까?")
                         window.location.reload();
                         //페이지 리로드 후 변경내역 확인
                         for (let x of data.cart) {
