@@ -42,7 +42,7 @@
             $target.addClass("disable");
         });
 
-        socket.on("double", function (data) {
+        socket.on("reserveDouble", function (data) {
             var $target = $(
                 "div[data-x = " + data.x + "][data-y = " + data.y + "]"
             );
@@ -63,7 +63,7 @@
                 var x = $(this).attr("data-x");
                 var y = $(this).attr("data-y");
 
-                if (confirm("좌석을 예약하시겠습니까?")) {
+                if (confirm("좌석을 한개 예약하시겠습니까?")) {
                     $(this).off("click");
                     socket.emit("reserve", {
                         x: x,
@@ -71,10 +71,12 @@
                     });
                 } if(confirm("좌석을 두개 예약하시겠습니까?")) {
                     $(this).off("click");
-                    socket.emit("double", {
+                    socket.emit("reserveDouble", {
                         x: x,
                         y: y,
+                        z:x+1,
                     });
+                    alert("좌석이 두개 예약 됐습니다.")
                 }
                 else{
                     alert("좌석이 한개 예약됐습니다.")

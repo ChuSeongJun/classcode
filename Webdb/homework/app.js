@@ -41,9 +41,10 @@ io.sockets.on("connection", function (socket) {
     io.sockets.emit("reserve", data);
   });
 
-  socket.on("double", function (data) {
-    seats[data.y][data.x + 1] = 2;
-    io.sockets.emit("double", data);
+  socket.on("reserveDouble", function (data) {
+    seats[data.y][data.x] = 2;
+    seats[data.y][data.x - 1] = 2;
+    io.sockets.emit("reserveDouble", data);
   });
 
   socket.on("reserveBak", function (data) {
