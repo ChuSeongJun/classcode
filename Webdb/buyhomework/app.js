@@ -57,6 +57,7 @@ io.on("connection", (socket) => {
   }
 
   let Allcart = [];
+  //상품을 담을 배열 생성
   var cart = {};
 
   socket.on("cart", function (index) {
@@ -69,6 +70,7 @@ io.on("connection", (socket) => {
     }, 1000 * 60 * 10);
 
     Allcart.push(index);
+    //배열에 값 넣기
 
     io.sockets.emit("count", {
       index: index,
@@ -87,6 +89,7 @@ io.on("connection", (socket) => {
     });
   });
 
+  //전체 상품 구매 BuyBtn 이벤트 발생
   socket.on("BuyBtn", function () {
     io.sockets.emit("Allcart", {
       cart: Allcart,

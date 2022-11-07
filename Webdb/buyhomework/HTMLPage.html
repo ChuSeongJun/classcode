@@ -34,12 +34,16 @@
                     $(this).attr("toggle", "off");
 
 
-                    var NowTime = 120
+                    //전체 시간 설정
+                    //보통 5분으로 하므로 300으로 5분 설정
+                    var NowTime = 300
                     var timer;
+                    //1초마다 타이머 업데이트위해 setInterval 설정
                     function time() {
                         timer = setInterval(alertFunc, 1000);
                     }
                     time();
+                    //time 함수 실행
 
                     function alertFunc() {
                         var minute = NowTime / 60;
@@ -49,7 +53,9 @@
                         console.log(minute+"분"+second+"초");
 
 
+                        //시간이 타이머가 0이 되었을떄 조건 설정
                         if (NowTime == 0) {
+                            //타이머 중지
                             clearInterval(timer);
                         }
                         NowTime--;
@@ -70,17 +76,21 @@
                 }
             });
 
+            //전체 구매 버튼 클릭시 이벤트
             $("#BuyBtn").click(function () {
                 socket.emit("BuyBtn");
 
-                var num = 0;
+                var FirstState = 0;
 
                 socket.on("Allcart", function (data) {
-                    if (num === 0 && confirm("장바구니에 담긴것을 구매하시겠습니까?")) {
+                    //조건 충족시 장바구니에 담긴것 구매 가능
+                    if (FirstState === 0 && confirm("장바구니에 담긴것을 구매하시겠습니까?")) {
 
-                        num = 1;
+                        FirstState = 1;
                         window.location.reload();
+                        //페이지 리로드 후 변경내역 확인
                         for (let x of data.cart) {
+                            //카드에 담긴것 돌면서 삭제
                             $("li").remove(`#${x}`);
                         }
 
@@ -99,7 +109,9 @@
     <div>
     로그인 하는곳
     <br>
+<!--        로그인 input 창-->
     ID : 마스터 아이디 1234 <input type="text" placeholder="ID를 입력하세요" id="userid"><br>
+<!--        비밀번호 input 창-->
     비밀번호 : 마스터 비밀번호 1234<input type="password" placeholder="비밀번호" id="userpw">
     <input type="button" value="로그인" id="signinButton">
     </div>
@@ -118,6 +130,7 @@
 
             </li>
             <% }); %>
+<!--            버튼 클릭시 장바구니 구매버튼-->
             <button id="BuyBtn">장바구니 구매</button>
         </ul>
     </div>
@@ -127,6 +140,7 @@
     const signinButton = document.getElementById("signinButton")
     signinButton.addEventListener('click', signinFunc)
 
+    //로그인 조건 일치 불일치
     function signinFunc () {
         const userid = document.getElementById("userid").value;
         const userpw = document.getElementById("userpw").value;
