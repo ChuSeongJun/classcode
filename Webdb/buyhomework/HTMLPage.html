@@ -88,9 +88,9 @@
                         confirm("장바구니에 담긴것을 구매하시겠습니까?")
                         window.location.reload();
                         //페이지 리로드 후 변경내역 확인
-                        for (let x of data.cart) {
+                        for (let removeNumber of data.cart) {
                             //카드에 담긴것 돌면서 삭제
-                            $("li").remove(`#${x}`);
+                            $("li").remove(`#${removeNumber}`);
                         }
 
                     }
